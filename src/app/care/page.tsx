@@ -38,13 +38,13 @@ const approach = [
 ];
 
 const promises = [
-  "Round-the-clock residential personal care",
+  "Round-the-clock residential dementia care",
   "Support with washing, dressing, mobility & continence",
   "Safe medication management",
-  "Freshly prepared, nutritious meals",
-  "A full programme of activities & companionship",
-  "Coordination with GPs, nurses & specialists",
-  "Respite & short-stay options",
+  "Freshly prepared meals with mealtime support",
+  "Meaningful, dementia-friendly activities & companionship",
+  "Coordination with GPs, nurses & dementia specialists",
+  "Respite, short-stay & day care options",
   "Dignified end-of-life care with compassion",
 ];
 
@@ -53,8 +53,8 @@ export default function CarePage() {
     <>
       <PageHero
         eyebrow="Our Care"
-        title="Residential personal care, delivered with warmth"
-        intro="We provide CQC-registered residential care for elderly adults — supporting everyday life, health and happiness in a home that feels like one."
+        title="Specialist dementia care, delivered with warmth"
+        intro="We provide CQC-rated 'Good' residential dementia care for older people — plus respite and day care — supporting everyday life, health and happiness in a home that feels like one."
       >
         <Link href="/admissions" className="btn-accent">
           Admissions & fees

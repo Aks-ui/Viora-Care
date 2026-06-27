@@ -56,7 +56,7 @@ export function Hero() {
             className="inline-flex items-center gap-2 rounded-full border border-forest-200 bg-white/70 px-4 py-1.5 text-xs font-semibold text-forest-700 shadow-soft backdrop-blur"
           >
             <ShieldCheck className="h-4 w-4 text-forest-600" />
-            CQC-registered residential care · Gloucester
+            CQC-rated &lsquo;Good&rsquo; · Specialist dementia care
           </motion.span>
 
           <motion.h1
@@ -90,9 +90,9 @@ export function Hero() {
             variants={item}
             className="mt-6 max-w-xl text-pretty text-lg leading-relaxed text-ink-soft"
           >
-            Cavendish Care Home offers warm, person-centred residential care for
-            elderly adults — 23 en-suite bedrooms, an experienced team that stays,
-            and the small comforts that make a house a home.
+            Cavendish Care Home is a specialist dementia care home in Gloucester —
+            warm, person-centred residential, respite and day care, an experienced
+            team that stays, and the small comforts that make a house a home.
           </motion.p>
 
           <motion.div variants={item} className="mt-8 flex flex-wrap gap-3">
@@ -123,11 +123,11 @@ export function Hero() {
             </span>
             <span className="inline-flex items-center gap-1.5">
               <span className="h-1.5 w-1.5 rounded-full bg-forest-400" />
-              Caring since {site.establishedYear}
+              Caring for 30+ years
             </span>
             <span className="inline-flex items-center gap-1.5">
               <span className="h-1.5 w-1.5 rounded-full bg-clay-400" />
-              Registered manager retained
+              Experienced team retained
             </span>
           </motion.div>
         </motion.div>
@@ -209,8 +209,8 @@ export function Hero() {
                 <ShieldCheck className="h-5 w-5" />
               </span>
               <div className="leading-tight">
-                <p className="text-lg font-semibold text-ink">23 beds</p>
-                <p className="text-xs text-ink-muted">En-suite & homely</p>
+                <p className="text-lg font-semibold text-ink">Rated &lsquo;Good&rsquo;</p>
+                <p className="text-xs text-ink-muted">by the CQC</p>
               </div>
             </div>
           </motion.div>

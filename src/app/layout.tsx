@@ -26,12 +26,14 @@ export const metadata: Metadata = {
   },
   description: site.description,
   keywords: [
-    "care home Gloucester",
-    "residential care Gloucester",
+    "dementia care home Gloucester",
+    "residential dementia care Gloucester",
+    "dementia day care Gloucester",
+    "respite care Gloucester",
     "elderly care",
     "Cavendish Care Home",
     "Viora Care",
-    "CQC registered care home",
+    "CQC rated good care home",
   ],
   openGraph: {
     title: `${site.name} · Cavendish Care Home`,

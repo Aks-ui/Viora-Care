@@ -71,7 +71,7 @@ export default function OurHomePage() {
       <PageHero
         eyebrow="Our Home"
         title="A warm, welcoming place to call home"
-        intro="Cavendish is a 23-bedroom residential home on Stroud Road, Gloucester — comfortable, safe and unmistakably homely, with spaces designed around how our residents actually live."
+        intro="Cavendish is a small, homely dementia care home on Stroud Road, Gloucester — comfortable, safe and easy to navigate, with calm, dementia-friendly spaces designed around how our residents actually live."
       >
         <Link href="/contact" className="btn-accent">
           Book a tour
