@@ -5,7 +5,8 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { CTA } from "@/components/sections/CTA";
 import { Counter } from "@/components/motion/Counter";
 import { Reveal, Stagger, StaggerItem } from "@/components/motion/Reveal";
-import { team, staffingFacts } from "@/lib/site";
+import { team, teamMembers, staffingFacts } from "@/lib/site";
+import { TeamMemberCard } from "@/components/ui/TeamMemberCard";
 import { Award, HeartHandshake, GraduationCap, Check } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -102,7 +103,7 @@ export default function TeamPage() {
       {/* Team roles */}
       <section className="container-x py-20 sm:py-28">
         <SectionHeading
-          eyebrow="Who you'll meet"
+          eyebrow="How we're organised"
           title="A team for every part of the day"
           intro="From the home manager to housekeeping, every role exists to make our residents' lives easier, safer and happier."
           align="center"
@@ -129,6 +130,29 @@ export default function TeamPage() {
             </StaggerItem>
           ))}
         </Stagger>
+      </section>
+
+      {/* Meet the team gallery */}
+      <section className="bg-cream-100 py-20 sm:py-28">
+        <div className="container-x">
+          <SectionHeading
+            eyebrow="Meet the team"
+            title="The faces of Cavendish"
+            intro="As the Cavendish team joins Viora Care, we're adding individual profiles and photos here. We're proud to be keeping the people our residents already know and trust."
+            align="center"
+          />
+          <Stagger className="mt-14 grid grid-cols-2 gap-5 sm:gap-6 lg:grid-cols-4">
+            {teamMembers.map((member, i) => (
+              <StaggerItem key={`${member.role}-${i}`} className="h-full">
+                <TeamMemberCard member={member} />
+              </StaggerItem>
+            ))}
+          </Stagger>
+          <p className="mx-auto mt-10 max-w-xl text-center text-sm text-ink-muted">
+            Profiles and photographs are being added with each team member&apos;s
+            consent as they join us.
+          </p>
+        </div>
       </section>
 
       <CTA

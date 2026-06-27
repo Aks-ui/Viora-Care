@@ -139,6 +139,31 @@ export const team = [
   },
 ];
 
+// Individual team members for the "Meet the team" gallery.
+// As the Cavendish team joins Viora Care, fill in `name`, an optional one-line
+// `bio`, and drop a photo into /public/team/ then set `photo` to its path
+// (e.g. "/team/jane-smith.jpg"). Until then, cards show a tasteful placeholder.
+export type TeamMember = {
+  name?: string;
+  role: string;
+  department: string;
+  bio?: string;
+  photo?: string;
+};
+
+export const teamMembers: TeamMember[] = [
+  { role: "Home Manager", department: "Leadership" },
+  { role: "Deputy Manager", department: "Leadership" },
+  { role: "Senior Care Practitioner", department: "Care team" },
+  { role: "Senior Care Practitioner", department: "Care team" },
+  { role: "Care Practitioner", department: "Care team" },
+  { role: "Care Practitioner", department: "Care team" },
+  { role: "Activities Coordinator", department: "Wellbeing" },
+  { role: "Head Chef", department: "Hospitality" },
+  { role: "Housekeeping Lead", department: "Hospitality" },
+  { role: "Administrator", department: "Support" },
+];
+
 // Real characteristics of the Cavendish staffing model.
 export const staffingFacts = [
   "Full-time, experienced home manager",
