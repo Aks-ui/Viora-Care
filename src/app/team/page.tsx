@@ -5,17 +5,17 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { CTA } from "@/components/sections/CTA";
 import { Counter } from "@/components/motion/Counter";
 import { Reveal, Stagger, StaggerItem } from "@/components/motion/Reveal";
-import { team } from "@/lib/site";
-import { Award, HeartHandshake, GraduationCap } from "lucide-react";
+import { team, staffingFacts } from "@/lib/site";
+import { Award, HeartHandshake, GraduationCap, Check } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Our Team",
   description:
-    "Meet the experienced, long-serving team at Cavendish Care Home — led by a retained registered manager, with an average staff tenure of 8.3 years.",
+    "Meet the experienced, long-serving team at Cavendish Care Home — a full-time manager, 24-hour senior care cover, dementia-trained carers, and an average staff tenure of 8.3 years.",
 };
 
 const teamStats = [
-  { value: 23, suffix: "", label: "Team members", icon: HeartHandshake },
+  { value: 24, suffix: "/7", label: "Senior care on site", icon: HeartHandshake },
   { value: 8.3, suffix: " yrs", label: "Average tenure", icon: Award, dec: 1 },
   { value: 100, suffix: "%", label: "Care that stays consistent", icon: GraduationCap },
 ];
@@ -26,7 +26,7 @@ export default function TeamPage() {
       <PageHero
         eyebrow="Our Team"
         title="The people who make Cavendish feel like home"
-        intro="Great care is, in the end, about people. Ours is a settled, experienced team — many of whom have been here for years — who know our residents not as cases, but as individuals."
+        intro="Great dementia care is, in the end, about people. Ours is a settled, experienced team — many of whom have been here for years — who know our residents not as diagnoses, but as individuals."
       >
         <Link href="/contact" className="btn-accent">
           Join us / get in touch
@@ -55,11 +55,25 @@ export default function TeamPage() {
       {/* Continuity callout */}
       <section className="bg-cream-100 py-20 sm:py-28">
         <div className="container-x grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
-          <SectionHeading
-            eyebrow="Continuity matters"
-            title="The same faces, through the transition and beyond"
-            intro="When Viora Care took over in 2025, our first commitment was to the team. We retained the experienced registered manager and the carers our residents already knew and trusted — because familiarity is part of good care, not a detail."
-          />
+          <div>
+            <SectionHeading
+              eyebrow="Continuity matters"
+              title="The same faces, through the transition and beyond"
+              intro="As Viora Care takes over, our first commitment is to the team. We are retaining the experienced manager and the carers our residents already know and trust — because familiarity is part of good dementia care, not a detail."
+            />
+            <Stagger className="mt-8 grid gap-3 sm:grid-cols-2">
+              {staffingFacts.map((fact) => (
+                <StaggerItem key={fact}>
+                  <div className="flex items-start gap-3">
+                    <span className="mt-0.5 grid h-6 w-6 shrink-0 place-items-center rounded-full bg-forest-100 text-forest-700">
+                      <Check className="h-3.5 w-3.5" strokeWidth={3} />
+                    </span>
+                    <span className="text-sm font-medium text-ink-soft">{fact}</span>
+                  </div>
+                </StaggerItem>
+              ))}
+            </Stagger>
+          </div>
           <Reveal direction="left">
             <div className="rounded-[2rem] border border-forest-100 bg-white/85 p-8 shadow-soft">
               <p className="font-display text-2xl font-semibold leading-snug text-ink">
@@ -73,11 +87,11 @@ export default function TeamPage() {
               </p>
               <div className="mt-6 flex items-center gap-3 border-t border-forest-100 pt-6">
                 <span className="grid h-11 w-11 place-items-center rounded-full bg-forest-700 font-display font-semibold text-cream-50">
-                  RM
+                  HM
                 </span>
                 <div>
-                  <p className="font-semibold text-ink">Registered Manager</p>
-                  <p className="text-sm text-ink-muted">Retained &amp; leading the home</p>
+                  <p className="font-semibold text-ink">Home Manager</p>
+                  <p className="text-sm text-ink-muted">Full-time &amp; leading the home</p>
                 </div>
               </div>
             </div>
@@ -90,7 +104,7 @@ export default function TeamPage() {
         <SectionHeading
           eyebrow="Who you'll meet"
           title="A team for every part of the day"
-          intro="From the registered manager to housekeeping, every role exists to make our residents' lives easier, safer and happier."
+          intro="From the home manager to housekeeping, every role exists to make our residents' lives easier, safer and happier."
           align="center"
         />
         <Stagger className="mt-14 grid gap-6 sm:grid-cols-2">

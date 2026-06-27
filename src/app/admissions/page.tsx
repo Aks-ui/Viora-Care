@@ -69,7 +69,7 @@ export default function AdmissionsPage() {
       <PageHero
         eyebrow="Admissions & Fees"
         title="A calm, supported path to moving in"
-        intro="Choosing a care home is a big decision. We aim to make the process simple, honest and reassuring — for both privately funded and local-authority funded residents."
+        intro="Choosing a dementia care home is a big decision. We aim to make the process simple, honest and reassuring — for both privately funded and local-authority funded residents."
       >
         <Link href="/contact" className="btn-accent">
           Start a conversation

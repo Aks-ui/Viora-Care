@@ -17,12 +17,12 @@ export function Footer() {
           <div>
             <Logo variant="light" />
             <p className="mt-5 max-w-xs text-pretty text-sm leading-relaxed text-cream-100/70">
-              Warm, person-centred residential care for elderly adults in
-              Gloucester — caring for our community since {site.establishedYear}.
+              Warm, person-centred specialist dementia care in Gloucester —
+              caring for our community for over {site.heritageYears} years.
             </p>
             <p className="mt-5 inline-flex items-center gap-2 rounded-full border border-cream-100/15 bg-white/5 px-3.5 py-1.5 text-xs font-medium text-cream-100/80">
               <span className="h-2 w-2 rounded-full bg-gold-400" />
-              CQC-registered care home
+              CQC-rated &lsquo;Good&rsquo; dementia care
             </p>
           </div>
 

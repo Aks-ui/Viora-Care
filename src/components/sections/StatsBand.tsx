@@ -20,20 +20,11 @@ export function StatsBand() {
             className="group bg-cream-50 px-6 py-8 text-center transition-colors duration-300 hover:bg-white"
           >
             <p className="font-display text-4xl font-semibold text-forest-700 sm:text-5xl">
-              {"raw" in s && s.raw ? (
-                <Counter
-                  value={s.value}
-                  prefix={s.prefix ?? ""}
-                  decimals={0}
-                  duration={2}
-                />
-              ) : (
-                <Counter
-                  value={s.value}
-                  suffix={s.suffix ?? ""}
-                  decimals={s.value % 1 !== 0 ? 1 : 0}
-                />
-              )}
+              <Counter
+                value={s.value}
+                suffix={s.suffix ?? ""}
+                decimals={s.value % 1 !== 0 ? 1 : 0}
+              />
             </p>
             <p className="mt-2 text-sm font-medium text-ink-muted">{s.label}</p>
           </div>

@@ -4,11 +4,14 @@ export const site = {
   name: "Viora Care",
   legalName: "Viora Care Limited",
   home: "Cavendish Care Home",
-  tagline: "Residential care, the way it should feel — like home.",
+  tagline: "Specialist dementia care, the way it should feel — like home.",
   description:
-    "Cavendish Care Home is a 23-bed residential care home in Gloucester, providing warm, person-centred care for elderly adults. Operated by Viora Care Limited.",
+    "Cavendish Care Home is a long-established residential dementia care home in Gloucester, rated 'Good' by the CQC. We provide warm, person-centred residential, respite and day care for older people living with dementia. Operated by Viora Care Limited.",
   beds: 23,
   establishedYear: 2003,
+  heritageYears: 30,
+  cqcRating: "Good",
+  careType: "Specialist residential dementia care",
   address: {
     line1: "Cavendish Care Home",
     line2: "301 Stroud Road",
@@ -43,97 +46,106 @@ export const primaryNav: NavItem[] = [
 // Headline statistics used across the site.
 export const stats = [
   { value: 23, suffix: "", label: "En-suite bedrooms" },
-  { value: 2003, prefix: "Est. ", label: "Caring since", raw: true },
-  { value: 23, suffix: "", label: "Dedicated team members" },
+  { value: 30, suffix: "+ yrs", label: "Caring for Gloucester" },
+  { value: 24, suffix: "/7", label: "Senior care on site" },
   { value: 8.3, suffix: " yrs", label: "Average staff tenure" },
 ];
 
 export const values = [
   {
     title: "Dignity first",
-    body: "Every resident is met with respect, privacy and choice. We care for the person, never just the need.",
+    body: "Everyone living with dementia is met with respect, privacy and choice. We care for the person, never just the diagnosis.",
     icon: "heart",
   },
   {
     title: "Genuinely homely",
-    body: "A warm, familiar place where routines, relationships and the small comforts of home are protected.",
+    body: "A small, warm, dementia-friendly home where familiar routines, relationships and the comforts of home are protected.",
     icon: "home",
   },
   {
-    title: "Skilled & steady",
-    body: "An experienced, long-serving team — average tenure 8.3 years — who know our residents well.",
+    title: "Skilled in dementia",
+    body: "An experienced, long-serving team — average tenure 8.3 years — trained in dementia care and minimal reliance on agency staff.",
     icon: "users",
   },
   {
-    title: "Safe & accountable",
-    body: "CQC-registered with clear, standardised care processes and transparent, family-friendly communication.",
+    title: "Rated 'Good' by the CQC",
+    body: "Independently rated 'Good' in all areas, with clear care processes and open, family-friendly communication.",
     icon: "shield",
   },
 ];
 
 export const careServices = [
   {
-    title: "Residential personal care",
-    body: "Round-the-clock support with daily living — washing, dressing, mobility and medication — delivered with patience and warmth.",
+    title: "Residential dementia care",
+    body: "Round-the-clock residential care for older people living with dementia — support with daily living, delivered with patience, warmth and deep familiarity.",
     icon: "hand-heart",
   },
   {
-    title: "Person-centred care plans",
-    body: "Every resident has a plan built around their history, preferences and goals, reviewed regularly with families.",
+    title: "Person-centred dementia plans",
+    body: "Care built around each person's life story, preferences and stage of dementia, reviewed regularly with families.",
     icon: "clipboard",
   },
   {
     title: "Respite & short stays",
-    body: "Planned or emergency short-term stays that give family carers a well-earned rest, with the same standard of care.",
+    body: "Planned or emergency short-term stays that give family carers a well-earned rest, with the same specialist standard of care.",
     icon: "calendar",
   },
   {
-    title: "Companionship & wellbeing",
-    body: "A full programme of activities, outings and one-to-one time that keeps body, mind and spirit active.",
+    title: "Dementia day care",
+    body: "Daytime support, activity and companionship at Cavendish — a friendly, familiar place to spend the day while carers take a break.",
     icon: "smile",
   },
   {
     title: "Nutritious home cooking",
-    body: "Freshly prepared meals, balanced for health and tailored to dietary needs, preferences and cultural tastes.",
+    body: "Freshly prepared meals with gentle, dementia-friendly support at mealtimes, tailored to dietary needs and tastes.",
     icon: "utensils",
   },
   {
     title: "Coordinated healthcare",
-    body: "We work closely with GPs, district nurses and specialists so medical needs are met promptly and properly.",
+    body: "We work closely with GPs, district nurses and dementia specialists so medical needs are met promptly and properly.",
     icon: "stethoscope",
   },
 ];
 
 export const facilities = [
-  { title: "En-suite bedrooms", body: "23 private rooms residents are encouraged to make their own.", icon: "bed" },
-  { title: "Landscaped gardens", body: "Accessible, secure outdoor space to enjoy the fresh air safely.", icon: "trees" },
-  { title: "Homely lounges", body: "Comfortable shared spaces for company, television and quiet time.", icon: "sofa" },
-  { title: "Dining room", body: "A sociable setting for freshly cooked meals together.", icon: "utensils" },
-  { title: "Activity spaces", body: "Room for crafts, music, exercise and visiting entertainers.", icon: "palette" },
+  { title: "Private bedrooms", body: "Comfortable rooms residents are encouraged to fill with familiar, personal belongings.", icon: "bed" },
+  { title: "Secure gardens", body: "Accessible, safely enclosed outdoor space to enjoy the fresh air with peace of mind.", icon: "trees" },
+  { title: "Homely lounges", body: "Calm, easy-to-navigate shared spaces for company, music and quiet time.", icon: "sofa" },
+  { title: "Dining room", body: "A sociable setting for freshly cooked meals with gentle support at hand.", icon: "utensils" },
+  { title: "Meaningful activities", body: "Reminiscence, music, crafts and gentle exercise designed for people living with dementia.", icon: "palette" },
   { title: "Quiet & visiting areas", body: "Private corners for families to spend unhurried time together.", icon: "coffee" },
 ];
 
 export const team = [
   {
-    name: "Registered Manager",
-    role: "Experienced & retained through the transition",
-    bio: "Our long-standing registered manager continues to lead the home — the steady hand that keeps day-to-day care consistent and personal.",
+    name: "Home Manager",
+    role: "Full-time, experienced & retained",
+    bio: "A full-time, experienced home manager leads Cavendish day to day — the steady hand who keeps dementia care consistent, personal and safe. Families are warmly invited to arrange a time to meet her.",
   },
   {
     name: "Senior Care Team",
-    role: "Care leads & seniors",
-    bio: "Experienced seniors supervise each shift, mentor newer colleagues and act as the first point of contact for families.",
+    role: "24-hour senior cover",
+    bio: "Senior care staff are on site around the clock, supervising every shift, supporting colleagues and acting as the first point of contact for families.",
   },
   {
     name: "Care Practitioners",
     role: "The heart of daily life",
-    bio: "Kind, capable carers who know every resident by name, their story and exactly how they like their tea.",
+    bio: "Kind, dementia-trained carers — many with years of service — who know every resident by name, their life story and exactly how they like their tea.",
   },
   {
     name: "Hospitality & Wellbeing",
     role: "Catering, housekeeping & activities",
-    bio: "The team behind freshly cooked meals, a spotless home and a calendar full of things to look forward to.",
+    bio: "The team behind freshly cooked meals, a clean and homely environment and a calendar of meaningful, dementia-friendly activities.",
   },
+];
+
+// Real characteristics of the Cavendish staffing model.
+export const staffingFacts = [
+  "Full-time, experienced home manager",
+  "Senior care staff on site 24 hours a day",
+  "Experienced team, many with years of service",
+  "Minimal reliance on agency staff — familiar faces every day",
+  "Ongoing dementia training, fully funded and paid",
 ];
 
 // The Viora Care ownership & investment strategy.
@@ -168,47 +180,47 @@ export const strategy = [
 
 export const timeline = [
   {
-    year: "2003",
-    title: "Cavendish opens its doors",
-    body: "Cavendish Care Home begins providing residential care on Stroud Road, Gloucester, building a reputation for warmth and reliability.",
+    year: "30+ years ago",
+    title: "Cavendish begins caring for Gloucester",
+    body: "Cavendish opens on Stroud Road, beginning more than three decades of caring for older people in the local community.",
   },
   {
-    year: "2003–2024",
-    title: "Two decades of trusted care",
-    body: "Two decades of stable ownership, a loyal team and deep roots in the local community.",
+    year: "Over the years",
+    title: "Evolving with the community's needs",
+    body: "Cavendish grows from a residential care home to a nursing home and then to a specialist dementia care home — always shaped around the people it serves.",
+  },
+  {
+    year: "Rated 'Good'",
+    title: "A trusted reputation",
+    body: "Independently rated 'Good' by the Care Quality Commission in all areas, with a wonderful reputation among residents, families and the local community.",
   },
   {
     year: "2025",
     title: "Viora Care acquires Cavendish",
-    body: "Viora Care Limited acquires the home, retaining the registered manager and committing to investment and continuity of care.",
-  },
-  {
-    year: "Today",
-    title: "Building on strong foundations",
-    body: "Investing in infrastructure, standardising care and introducing digital tools — all while protecting what already makes Cavendish special.",
+    body: "Viora Care Limited acquires the home, retaining the experienced manager and team and committing to investment and continuity of care.",
   },
 ];
 
 export const faqs = [
   {
     q: "What type of care does Cavendish provide?",
-    a: "We provide residential personal care for elderly adults — support with everyday living, companionship and wellbeing in a safe, homely setting. We are registered with the Care Quality Commission (CQC).",
+    a: "Cavendish is a specialist dementia care home for older people (over 65). We provide residential dementia care, respite and short stays, and dementia day care — all in a safe, homely setting. We are registered with the Care Quality Commission (CQC) and rated 'Good' in all areas.",
+  },
+  {
+    q: "Do you offer respite or day care as well as permanent stays?",
+    a: "Yes. Alongside permanent residential dementia care, we offer planned and emergency respite stays, and a dementia day care service for people who live at home but benefit from daytime support, activity and company.",
   },
   {
     q: "Is Viora Care a new owner — will care change?",
-    a: "Viora Care Limited acquired Cavendish in 2025 and has retained the experienced registered manager and care team. Our priority is continuity: we are investing in the home and standardising processes while protecting the relationships and routines residents value.",
+    a: "Viora Care Limited is acquiring Cavendish and will retain the experienced manager and care team. Our priority is continuity: we are investing in the home and standardising processes while protecting the relationships and routines residents value.",
   },
   {
     q: "Do you accept local-authority funded residents?",
     a: "Yes. We support both privately funded and local-authority funded residents, and we are growing toward a balanced mix. Our team can help you understand funding options and assessments.",
   },
   {
-    q: "Can we visit before deciding?",
-    a: "Absolutely — we warmly encourage it. Tours can be arranged seven days a week by appointment, so you can meet the team and get a real feel for the home.",
-  },
-  {
-    q: "How do you keep families informed?",
-    a: "We believe in open, honest communication. Alongside everyday conversation, our digital care management system helps us share clear, timely updates with families about their loved one's wellbeing.",
+    q: "Can we visit and meet the manager before deciding?",
+    a: "Absolutely — we warmly encourage it. Visits can be arranged seven days a week; just let us know a convenient time so the home manager can make sure she's available to meet you.",
   },
   {
     q: "What are your visiting hours?",

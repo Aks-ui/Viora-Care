@@ -10,10 +10,10 @@ import { Reveal, Stagger, StaggerItem } from "@/components/motion/Reveal";
 import { values, careServices, strategy } from "@/lib/site";
 
 const welcomePoints = [
-  "Experienced registered manager retained through the transition",
-  "A long-serving team — average tenure of 8.3 years",
-  "Person-centred care plans built around each resident",
-  "Open, honest communication with families",
+  "Specialist residential, respite & dementia day care",
+  "Rated 'Good' by the CQC in all areas",
+  "Experienced home manager and team retained",
+  "Senior care staff on site 24 hours a day",
 ];
 
 export default function HomePage() {
@@ -42,7 +42,7 @@ export default function HomePage() {
               {/* badge */}
               <div className="absolute -bottom-6 -right-2 rounded-2xl border border-forest-100 bg-white px-5 py-4 shadow-lift sm:-right-6">
                 <p className="font-display text-3xl font-semibold text-forest-700">
-                  20+ yrs
+                  30+ yrs
                 </p>
                 <p className="text-sm text-ink-muted">caring for Gloucester</p>
               </div>
@@ -52,8 +52,8 @@ export default function HomePage() {
           <div>
             <SectionHeading
               eyebrow="Welcome to Cavendish"
-              title="Care that puts the person before the routine"
-              intro="For over two decades, Cavendish Care Home on Stroud Road has been a place where elderly residents are known by name and cared for as individuals. Under Viora Care, we're protecting everything that makes it special — and thoughtfully investing in what comes next."
+              title="Specialist dementia care that feels like home"
+              intro="For more than 30 years, Cavendish on Stroud Road has cared for older people in Gloucester — growing into the specialist, CQC-rated 'Good' dementia care home it is today. Under Viora Care, we're protecting everything that makes it special and thoughtfully investing in what comes next."
             />
             <Stagger className="mt-8 space-y-3.5">
               {welcomePoints.map((point) => (

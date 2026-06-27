@@ -20,8 +20,8 @@ export default function AboutPage() {
     <>
       <PageHero
         eyebrow="About Viora Care"
-        title="Two decades of care, a fresh commitment to the future"
-        intro="Cavendish Care Home has cared for elderly residents on Stroud Road since 2003. In 2025 it became part of Viora Care Limited — new stewardship, the same familiar faces, and a clear plan to make a good home even better."
+        title="Three decades of care, a fresh commitment to the future"
+        intro="Cavendish has cared for older people on Stroud Road for over 30 years, growing into a specialist, CQC-rated 'Good' dementia care home. Now it is becoming part of Viora Care Limited — new stewardship, the same familiar faces, and a clear plan to make a good home even better."
       >
         <Link href="/contact" className="btn-accent">
           Arrange a visit
@@ -44,20 +44,22 @@ export default function AboutPage() {
           <div className="space-y-5 text-lg leading-relaxed text-ink-soft">
             <Reveal>
               <p>
-                Cavendish Care Home is a 23-bed residential care home at 301
-                Stroud Road, Gloucester. Since 2003 it has provided personal care
-                for elderly adults in a warm, homely setting, earning the trust of
-                generations of local families.
+                Cavendish Care Home is a long-established care home at 301 Stroud
+                Road, Gloucester. For more than 30 years it has cared for older
+                people locally — evolving from a residential home into the
+                specialist, CQC-rated{" "}
+                <strong className="font-semibold text-ink">&lsquo;Good&rsquo;</strong>{" "}
+                dementia care home it is today, trusted by generations of families.
               </p>
             </Reveal>
             <Reveal delay={0.08}>
               <p>
-                Viora Care Limited acquired the home in 2025. We deliberately kept
-                what works — most importantly the experienced registered manager
-                and a settled team whose average tenure is{" "}
+                Viora Care Limited is acquiring the home. We are deliberately
+                keeping what works — most importantly the experienced manager and
+                a settled team whose average tenure is{" "}
                 <strong className="font-semibold text-ink">8.3 years</strong>.
-                Continuity of care isn&apos;t a nice-to-have; for our residents,
-                it&apos;s everything.
+                Continuity of care isn&apos;t a nice-to-have; for people living
+                with dementia, it&apos;s everything.
               </p>
             </Reveal>
             <Reveal delay={0.16}>
